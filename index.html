@@ -11,12 +11,15 @@
       padding: 0;
       background: #f4f4f4;
       color: #333;
+      display: flex;
+      flex-direction: row;
     }
     header {
       background: #0a3d62;
       color: white;
       padding: 20px;
       text-align: center;
+      width: 100%;
     }
     nav {
       background: #3c6382;
@@ -24,6 +27,7 @@
       display: flex;
       justify-content: center;
       gap: 15px;
+      width: 100%;
     }
     nav a {
       color: white;
@@ -31,16 +35,20 @@
     }
     main {
       padding: 20px;
-      max-width: 900px;
-      margin: auto;
+      max-width: 70%;
       background: white;
+    }
+    aside {
+      max-width: 30%;
+      padding: 20px;
+      background: #eaeaea;
     }
     footer {
       background: #0a3d62;
       color: white;
       text-align: center;
       padding: 15px;
-      margin-top: 30px;
+      width: 100%;
     }
     .article {
       margin-bottom: 30px;
@@ -57,44 +65,53 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>Finančný Žralog</h1>
-    <p>Investičné a tradingové novinky – jednoducho a zadarmo</p>
-  </header>
-  <nav>
-    <a href="#home">Domov</a>
-    <a href="#novinky">Novinky</a>
-    <a href="#brokeri">Brokeri</a>
-    <a href="#kontakt">Kontakt</a>
-  </nav>
-  <main>
-    <section class="article">
-      <h2>💸 Americký Fed signalizuje možnosť zníženia sadzieb</h2>
-      <p>Po poslednom zasadnutí Fedu sa trhy začínajú pripravovať na možné zníženie úrokových sadzieb v druhej polovici roka. Ako to ovplyvní akcie a forex trhy?</p>
-    </section>
+  <div style="width: 100%;">
+    <header>
+      <h1>Finančný Žralog</h1>
+      <p>Investičné a tradingové novinky – jednoducho a zadarmo</p>
+    </header>
+    <nav>
+      <a href="#home">Domov</a>
+      <a href="#novinky">Novinky</a>
+      <a href="#brokeri">Brokeri</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <div style="display: flex;">
+      <main>
+        <section class="article">
+          <h2>💸 Americký Fed signalizuje možnosť zníženia sadzieb</h2>
+          <p>Po poslednom zasadnutí Fedu sa trhy začínajú pripravovať na možné zníženie úrokových sadzieb v druhej polovici roka. Ako to ovplyvní akcie a forex trhy?</p>
+        </section>
 
-    <section class="article">
-      <h2>📈 S&P 500 opäť na historických maximách</h2>
-      <p>Americké akcie lámu rekordy – čo stojí za týmto rastom a ktoré sektory ťahajú index nahor?</p>
-    </section>
+        <section class="article">
+          <h2>📈 S&P 500 opäť na historických maximách</h2>
+          <p>Americké akcie lámu rekordy – čo stojí za týmto rastom a ktoré sektory ťahajú index nahor?</p>
+        </section>
 
-    <section id="brokeri" class="affiliate">
-      <h3>🔗 Odporúčaní brokeri</h3>
-      <p>Ak ešte nemáš brokera, odporúčame si pozrieť týchto:</p>
-      <ul>
-        <li><strong>XTB</strong> – Nulové poplatky na akcie do 100k EUR mesačne. <a href="https://link-pso.xtb.com/pso/4gcj8" target="_blank">(affiliate link)</a></li>
-        <li><strong>eToro</strong> – Sociálne investovanie a kopírovanie traderov. <a href="#">(affiliate link sem)</a></li>
-        <li><strong>IC Markets</strong> – Rýchle exekúcie a nízke spready. <a href="#">(affiliate link sem)</a></li>
-      </ul>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2025 FinancnyZralog.sk – Všetky práva vyhradené</p>
-    <div style="background:#f9f9f9; padding:10px; text-align:center; font-size: 14px; border-top: 1px solid #ccc; color: #000;">
-      <strong>Disclaimer:</strong> Obchodovanie je rizikové a môžete stratiť časť alebo všetok investovaný kapitál.
-      Poskytnuté informácie slúžia len na informačné a vzdelávacie účely a nepredstavujú žiadny druh finančného poradenstva
-      a/alebo investičného odporúčania. Investovanie je rizikové. Investujte zodpovedne.
+        <section id="brokeri" class="affiliate">
+          <h3>🔗 Odporúčaní brokeri</h3>
+          <p>Ak ešte nemáš brokera, odporúčame si pozrieť týchto:</p>
+          <ul>
+            <li><strong>XTB</strong> – Nulové poplatky na akcie do 100k EUR mesačne. <a href="https://link-pso.xtb.com/pso/4gcj8" target="_blank">(affiliate link)</a></li>
+            <li><strong>eToro</strong> – Sociálne investovanie a kopírovanie traderov. <a href="#">(affiliate link sem)</a></li>
+            <li><strong>IC Markets</strong> – Rýchle exekúcie a nízke spready. <a href="#">(affiliate link sem)</a></li>
+          </ul>
+        </section>
+      </main>
+      <aside>
+        <h3>Sleduj nás na X (Twitter)</h3>
+        <a class="twitter-timeline" data-height="600" href="https://twitter.com/FinancnyZralog?ref_src=twsrc%5Etfw">Tweety od @FinancnyZralog</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </aside>
     </div>
-  </footer>
+    <footer>
+      <p>&copy; 2025 FinancnyZralog.sk – Všetky práva vyhradené</p>
+      <div style="background:#f9f9f9; padding:10px; text-align:center; font-size: 14px; border-top: 1px solid #ccc; color: #000;">
+        <strong>Disclaimer:</strong> Obchodovanie je rizikové a môžete stratiť časť alebo všetok investovaný kapitál.
+        Poskytnuté informácie slúžia len na informačné a vzdelávacie účely a nepredstavujú žiadny druh finančného poradenstva
+        a/alebo investičného odporúčania. Investovanie je rizikové. Investujte zodpovedne.
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
